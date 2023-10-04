@@ -1,0 +1,20 @@
+a:link{
+    color:darkblue;
+    text-decoration-line:none;
+}
+a:hover{
+    text-decoration-line:underline;
+}
+p::first-letter {
+    font-size: 150%;
+}
+h1{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+    color: darkblue;
+}
+body{
+    background-color: bisque
+}
