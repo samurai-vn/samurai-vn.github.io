@@ -1,0 +1,145 @@
+/* header style */
+.headerLeftBox {
+    float: left;
+    margin: 0.4em;
+    border: 0px solid black;
+}
+
+.headerRightBox {
+    float: right;
+    margin: 0.4em;
+    border: 0px solid black;
+}
+
+/* main center style */
+.mainCenterTitle {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: cadetblue;
+}
+
+/* main left style */
+.flexcontainer {
+    padding: 40px 0px;
+    display: flex;
+}
+.login_container_pane {
+    width: 50%;
+    padding: 20px 8%;
+}
+.hr_right {
+    border-right: 1px solid rgba(151, 151, 151, 0.2);
+}
+.cl_left {
+    text-align: left
+}
+.cl_login_container_wrap {
+    width: 100%;
+}
+.cl_form_field {
+    margin-bottom: 5px;
+}
+.cl_form_field_label {
+    color: #666;;
+}
+.cl_form_field_value {
+    margin: 5px 0;
+    padding: 10px 12px;
+    width: 100%;
+    outline: 0;
+    display: inline-block;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+    font-size: 14px;
+}
+.cl_login_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cl_form_field_btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 0;
+}
+.cl_login_container_header {
+    margin-bottom: 15px;
+}
+.cl_sso_wrap {
+    margin-bottom: 15px;
+    padding: 0 0 20px;
+    border-bottom: 1px dotted rgba(151,151,151,0.3);
+    position: relative;
+}
+.cl_sso_text {
+    padding: 10px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    background: #f3f3f3;
+    transform: translateX(-50%);
+}
+button {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.cl_form_field_btn_small {
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 0;
+}
+
+.cl_login_container_content {
+    color: #666;
+}
+.blur {
+    opacity: 0.4;
+}
+
+.leftAlign {
+    float: flex;
+}
+
+
+.vl {
+    border-left: 1px solid black;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 100px;
+    left: 50%;
+    opacity: 0.2;
+  }
+
+.none {
+    clear: both;
+}
+
+/* Link style */
+a:link {
+    color: darkblue;
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+/* Images style */
+img {
+    vertical-align: middle;
+}
