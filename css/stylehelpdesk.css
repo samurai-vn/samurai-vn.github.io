@@ -38,15 +38,15 @@
 .cl_login_container_wrap {
     width: 100%;
 }
-.cl_form_field {
+.cl_login_field {
     margin-bottom: 5px;
 }
-.cl_form_field_label {
+.cl_login_field_label {
     color: #666;;
 }
-.cl_form_field_value {
+.cl_login_field_value {
     margin: 5px 0;
-    padding: 10px 12px;
+    padding: 12px 0px;
     width: 100%;
     outline: 0;
     display: inline-block;
@@ -60,7 +60,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.cl_form_field_btn {
+.cl_login_field_btn {
     width: 100%;
     height: 40px;
     border-radius: 5px;
@@ -95,7 +95,7 @@ button {
     font-family: 'Open Sans',sans-serif;
 }
 
-.cl_form_field_btn_small {
+.cl_login_field_btn_small {
     width: 30%;
     height: 30px;
     border-radius: 5px;
