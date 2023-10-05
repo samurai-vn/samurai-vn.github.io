@@ -107,23 +107,24 @@ button {
 .cl_login_container_content {
     color: #666;
 }
-.blur {
+
+/* .blur {
     opacity: 0.4;
-}
+} */
 
-.leftAlign {
+/* .leftAlign {
     float: flex;
-}
+} */
 
 
-.vl {
+/* .vl {
     border-left: 1px solid black;
     height: 100%;
     position: absolute;
     padding-bottom: 100px;
     left: 50%;
     opacity: 0.2;
-  }
+  } */
 
 .none {
     clear: both;
