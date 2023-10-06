@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product Form</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="p-4 mb-1 bg-black text-white"></nav>
+        <nav class="navbar navbar-expand-lg bg-primary bg-gradient text-white border-top-1">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <h4>MUM Golden Dome Market ::: SRM System</h4>
+                        </li>
+                        <li class="nav-item px-3">
+                            <h4>|</h4>
+                        </li>
+                        <li class="nav-item px-3">
+                            <h4>Product</h4>
+                        </li>
+                        <li class="nav-item px-3">
+                            <h4>|</h4>
+                        </li>
+                        <li class="nav-item px-3">
+                            <h4>Supliers</h4>
+                        </li>
+                    </ul>
+                    <form action="/index.html">
+                        <ul class="navbar-nav my-2 my-lg-0">
+                            <li class="nav-item px-2">
+                                <h4>Hello!</h4>
+                            </li>
+                            <li class="nav-item px-2">
+                                <button class="btn btn-light my-2 my-sm-0" type="submit">Sign Out</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <h2 class="px-5 py-5 font-weight-light text-dark">New Product Form</h2>
+        <div class="container">
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Product number</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Quantity in stock</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="0"
+                            aria-describedby="">
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Supplier:</label>
+                        <div class="input-group">
+                            <select class="custom-select border rounded w-100" id="inputGroupSelect04"
+                                aria-placeholder="">
+                                <option selected>Select a supplier</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Unit Price</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="0.0"
+                            aria-describedby="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">Date Supplied</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="yyy-mm-dd"
+                            aria-describedby="">
+                        <span class="font-weight-light text-muted">Enter a valid Date</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col ml-auto">
+                    <button class="btn btn-outline-secondary" type="button">Reset</button>
+                </div>
+                <div class="col ml-auto">
+                    <button class="btn btn-outline-danger" type="button">Cancel</button>
+                </div>
+                <div class="col ml-auto">
+                    <button class="btn btn-outline-primary" type="button">Add product</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
