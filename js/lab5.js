@@ -117,6 +117,22 @@ function printFibo(n, a, b) {
     }
 }
 
+// part 2
+function mySort(arr) {
+    let ret = arr.sort((a, b)=>{return a===b ? 0 : (a > b ? 1 : -1)});
+    return ret;
+}
+
+function printMatrix() {
+    let myJMatrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+    myJMatrix.forEach(arr=>arr.forEach(e=>console.log(e)));
+}
+
 
 //test
-console.log(printFibo(10, 0, 1));
+// console.log(mySort(10, 0, 1));
+printMatrix();
