@@ -8,39 +8,40 @@ function askPassword(ok, fail) {
 let user = {
     name: 'john',
     loginOK() {
-        alert(`${this.name} logged in`);
+        alert(`${this.name} logged in`); //losing of 'this', 'this' is now window object because alert is the method of window object
     },
 
     loginFail() {
-        alert(`${this.name} failed to log in`);
+        alert(`${this.name} failed to log in`);//losing of 'this' be, 'this' is now window object because alert is the method of window object
     },
 };
 /** Solution for problem 1 */
-// askPassword(user.loginOK.bind(user), user.loginFail.bind(user))//using bind
-// askPassword(()=>user.loginOK.call(user), ()=>user.loginFail.call(user)); //using call
-// askPassword(()=>user.loginOK.apply(user), ()=>user.loginFail.apply(user)); //using appy
-// const OK = function() {
-//     user.loginOK();
-// }
-// const FAIL = function() {
-//     user.loginFail();
-// }
-// askPassword(OK, FAIL); //using wrapper method
+askPassword(user.loginOK.bind(user), user.loginFail.bind(user))//using bind
+askPassword(()=>user.loginOK.call(user), ()=>user.loginFail.call(user)); //using call
+askPassword(()=>user.loginOK.apply(user), ()=>user.loginFail.apply(user)); //using appy
+const OK = function() {
+    user.loginOK();
+}
+const FAIL = function() {
+    user.loginFail();
+}
+askPassword(OK, FAIL); //using wrapper method
+
 /**==================================================================================================== */
 /** Problem 2 */
-// let group = {
-//     title: "OurGrpoup",
-//     students: ["John", "Pete", "Alice"],
+let group = {
+    title: "OurGrpoup",
+    students: ["John", "Pete", "Alice"],
 
-//     showlist: function () {
-//         this.students.forEach(
-//             function (student) {
-//                 console.log(this.title + ": " + student);
-//             }.bind(this))
-//     }
+    showlist: function () {
+        this.students.forEach(
+            function (student) {
+                console.log(this.title + ": " + student);
+            }.bind(this))
+    }
 
-// };
-// group.showlist();
+};
+group.showlist();
 
 
 
