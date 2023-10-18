@@ -82,7 +82,10 @@ let chkOutPatients = doc.getElementById("chkShowOutPatients");
 
 submitBtn.addEventListener('click', regPatientClick)
 function regPatientClick(evt) {
-    evt.preventDefault();
+    if (!patientId.checkValidity()) {
+        return;
+    }
+    evt.preventDefault(); // Prevent form submission
     let tr = doc.createElement('tr');
 
     let td1 = doc.createElement('td');
@@ -114,6 +117,7 @@ function regPatientClick(evt) {
     tr.appendChild(td6);
     tr.appendChild(td7);
     tableBody.appendChild(tr);
+    // evt.preventDefault();
 
 }
 /** Lab10 b c */
@@ -156,8 +160,7 @@ function filterElderlyPatients(evt) {
                 node.classList.remove("d-none");
             }
         })
-        if (isOutPatientsFilter) 
-        {
+        if (isOutPatientsFilter) {
             filterOutPatients(evt);
         }
     }
@@ -188,12 +191,11 @@ function filterOutPatients(evt) {
                 node.classList.remove("d-none");
             }
         })
-        if (isElderlyFilter) 
-        {
+        if (isElderlyFilter) {
             filterElderlyPatients(evt);
         }
     }
-    
+
 }
 chkOutPatients.addEventListener('change', filterOutPatients);
 chkElderlyPatients.addEventListener('change', filterElderlyPatients);
