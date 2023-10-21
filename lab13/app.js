@@ -1,4 +1,4 @@
-const exp = require('constants');
+// const exp = require('constants');
 const express = require('express');
 const studentRouter = require('./router/studentRouter');
 
